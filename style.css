@@ -1,0 +1,397 @@
+
+/* home page 
+======================================================================================================= */
+
+body {
+    background: #FFE4D6;
+  }
+  
+  .name {
+    margin-top: 200px;
+    position: relative;
+    animation: slideIn 2s ease-out;
+
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  h1 {
+    font-weight: bolder;
+    transform: skew(-15deg, 0deg);
+    text-shadow: 2px 2px #D988B9;
+    color: #B0578D;
+    font-size: 4rem;
+  }
+  
+  h4, h3 {
+    color: #D988B9;
+    font-weight: bolder;
+    font-size: 2.5rem;
+  }
+  #my-navbar {
+    background-color:#FACBEA ;
+    z-index: 1;
+    position: sticky;
+    top : 0;
+  }
+  
+  #navbar-clr a {
+    color: #B0578D;
+    font-size: 1.5rem;
+    margin-top: 12px;
+  }
+  
+  #navbar-clr a:hover {
+    background-color: #D988B9;
+    color: white;
+  }
+  
+  #navbar-clr a:active:visited {
+    color: white;
+    background-color: #D988B9;
+  }
+  
+  .container {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+  }
+  
+  .pfp {
+    border-radius: 50%;
+    margin-top: 150px;
+    position: relative;
+    animation: slideUp 2s ease-out;
+    z-index: -2;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+
+
+/* ======================================================================
+  skills page 
+======================================================================= */
+
+#skills{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr;
+  padding : 30px;
+}
+
+#skills { 
+  background-color: #E3F4F4;
+  border-radius: 20px;
+}
+#skills  h3 {
+  color: white  ;
+  background-color: #C4DFDF;
+  margin-bottom: 20px;
+}
+
+.skill-1, .skill-2, .skill-3{
+  border: 2px solid #C4DFDF ;
+  color: white;
+  background-color: #C4DFDF;
+
+}
+
+#skills div { 
+  border: 5px solid transparent;
+   border-image : linear-gradient( to top right, #FACBEA,  #D988B9 );
+  border-image-slice: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  
+  /* animation: fadeIn 2s ease-out forwards, slideup 2s ease-out 0.5s forwards; */
+
+}
+
+hr {
+  border-top: 3px solid white;
+}
+
+.skill-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+      
+  }
+}
+
+
+/* ======================================================================
+  hobbies page
+======================================================================= */
+
+#hobbies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px white;
+  background-color: white;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+ 
+}
+#hobbies>div {
+  color : #C4DFDF;
+  background-color: white;
+  
+}
+#hobbies>div>h3 {
+  color: #C4DFDF;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #93dddd;
+  font-weight: bold;
+}
+.hobby2 img {
+  margin-top: 46px;
+}
+.hobby3 img {
+  padding : 0px;
+  margin: 0px;
+  height: 220px;
+  width : 250px;
+}
+.hobby3 h3 {
+ margin-top: 20px;
+}
+.hobby4 h3 {
+ padding: 0px;
+ margin: 0px;
+ margin-top: 20px;
+}
+
+.hobby4 p{
+  padding:0px;
+  margin: 0px;
+
+}
+.hobby4 img {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+/* ======================================================================
+  contact page
+======================================================================= */
+
+#contact {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#contact h3 {
+ text-align: center;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+}
+.items p {
+  padding: 10px;
+  padding-top: 20px;
+}
+/* ===========================================================================
+  responsiveness
+=========================================================================== */
+
+
+
+@media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 300px;
+      height: 90vh;
+      text-align: center;
+    
+    }
+    #navbar-clr a {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+  
+  .name {
+    order : 2;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  h1{
+    font-size: 3rem;
+    margin: 0px;
+  }
+  h3, h4 {
+    font-size: 2rem;
+    margin: 0px;
+  }
+    .pfp {
+      margin-top: 20px; 
+      opacity: 0; 
+      animation: fadeIn 2s ease-out forwards, slideDown 2s ease-out 0.5s forwards;
+      z-index: 0; 
+      order : 1;
+      padding: 0px;
+      height: 250px;
+    }
+  
+    @keyframes slideDown {
+      from {
+        opacity : 0;
+        transform: translateY(-100%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+
+    /* skills section  */
+  
+#skills{
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr  ;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
+  background-color: #E3F4F4;
+  padding: 10px;
+
+  
+}
+#skills div { 
+  margin: 10px;
+  border: 5px solid transparent;
+   border-image : linear-gradient( to top right, #FACBEA,  #D988B9 );
+  border-image-slice: 2;
+  padding: 5px;
+}
+#skills h3 {
+  margin-bottom: 10px;
+}
+#skills p { 
+  padding: 10px 6px; 
+}
+.skill-box:hover {
+  transform: scale(1.05);
+
+}
+#hobbies {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: white;
+  padding-top: 20px;
+
+}
+#hobbies h3 {
+  padding-top: 30px;
+}
+#hobbies img {
+  margin: 5px;
+}
+.hobby4 h3 {
+  padding: 0px;
+  margin: 0px;
+ }
+}
+
+
+/* ======================================================================
+  responsiveness for big devices
+======================================================================= */
+
+
+@media  (min-width: 1200px) {
+  #skills div { 
+    border: 5px solid transparent;
+     border-image : linear-gradient( to top right, #FACBEA,  #D988B9 );
+    border-image-slice: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    text-align: center;
+    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    /* animation: fadeIn 2s ease-out forwards, slideup 2s ease-out 0.5s forwards; */
+  }
+  .hobby2 img {
+    padding-top: 0px ;
+    margin-top: 49px;
+
+  }
+  .hobby3 img {
+    margin-top: 48px;
+  }
+  .hobby4 img {
+     margin-top: 5px;
+  }
+  #hobbies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: white;
+    height: 70vh;
+    text-align: center;
+    padding-top: 100px;
+  
+   
+  }
+  #hobbies>div {
+    color : #C4DFDF;
+    background-color: white;
+    
+  }
+  #hobbies>div>h3 {
+    color: #C4DFDF;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #93dddd;
+    font-weight: bold;
+  }
+  .hobby2 img {
+    margin-top: 50px;
+  }
+  .hobby3 img {
+    margin-top: 30px;
+    height: 200px;
+  }
+  
+
+}
