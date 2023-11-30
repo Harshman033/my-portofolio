@@ -103,14 +103,15 @@ body {
 }
 #skills  h3 {
   color: white  ;
-  background-color: #C4DFDF;
+  /* background-color: #C4DFDF; */
   margin-bottom: 20px;
 }
 
 .skill-1, .skill-2, .skill-3{
   border: 2px solid #C4DFDF ;
   color: white;
-  background-color: #C4DFDF;
+  font-weight: bolder;
+  background-color: #bfdbdb;
 
 }
 
@@ -177,30 +178,30 @@ hr {
   -webkit-text-stroke-color: #93dddd;
   font-weight: bold;
 }
-.hobby2 img {
-  margin-top: 46px;
-}
+
 .hobby3 img {
   padding : 0px;
   margin: 0px;
-  height: 220px;
-  width : 250px;
+  padding-top: 5px;
 }
-.hobby3 h3 {
- margin-top: 20px;
+.hobby2 img{
+  padding-top: 5px;
 }
-.hobby4 h3 {
- padding: 0px;
- margin: 0px;
- margin-top: 20px;
+.hobby1{
+padding-top: 5px;
+height: 200px;
 }
-
 .hobby4 p{
   padding:0px;
   margin: 0px;
+  color:  #b8dddd ;
 
 }
 .hobby4 img {
+  padding: 0px;
+  margin: 0px;
+}
+.hobby4 h3 {
   padding: 0px;
   margin: 0px;
 }
@@ -238,7 +239,7 @@ hr {
     .container {
       grid-template-columns: 1fr;
       grid-template-rows: 300px;
-      height: 90vh;
+      height: 60vh;
       text-align: center;
     
     }
@@ -318,18 +319,23 @@ hr {
   grid-template-rows: 1fr;
   background-color: white;
   padding-top: 20px;
+  padding-bottom: 20px;
 
 }
-#hobbies h3 {
-  padding-top: 30px;
-}
-#hobbies img {
-  margin: 5px;
-}
-.hobby4 h3 {
-  padding: 0px;
-  margin: 0px;
+
+.hobby4 h3{
+  margin-top: 8px;
  }
+ .hobby1 h3{
+  margin-top: 10px;
+ }
+.hobby2 h3{
+  margin-top: 10px;
+}
+.hobby3 h3{
+  margin-top: 10px;
+}
+
 }
 
 
@@ -352,17 +358,7 @@ hr {
     
     /* animation: fadeIn 2s ease-out forwards, slideup 2s ease-out 0.5s forwards; */
   }
-  .hobby2 img {
-    padding-top: 0px ;
-    margin-top: 49px;
-
-  }
-  .hobby3 img {
-    margin-top: 48px;
-  }
-  .hobby4 img {
-     margin-top: 5px;
-  }
+  
   #hobbies {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -385,13 +381,7 @@ hr {
     -webkit-text-stroke-color: #93dddd;
     font-weight: bold;
   }
-  .hobby2 img {
-    margin-top: 50px;
-  }
-  .hobby3 img {
-    margin-top: 30px;
-    height: 200px;
-  }
+  
   
 
 }
