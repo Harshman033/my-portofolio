@@ -239,7 +239,7 @@ height: 200px;
     .container {
       grid-template-columns: 1fr;
       grid-template-rows: 300px;
-      height: 60vh;
+      height: 70vh;
       text-align: center;
     
     }
